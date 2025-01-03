@@ -1,4 +1,10 @@
-import {createStore} from "redux";
-import {countReducer} from "./Reducers/CountReducer.ts";
+import {configureStore} from "@reduxjs/toolkit";
+import countReducer from "./Reducers/CountSlice.ts";
 
-export const store = createStore(countReducer)
+export const store = configureStore(
+    {
+        reducer: {
+            counter: countReducer,
+        },
+    }
+)
