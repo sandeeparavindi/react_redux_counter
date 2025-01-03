@@ -1,4 +1,4 @@
 import {createStore} from "redux";
-import {countReducer} from "./CountReducer.ts";
+import {countReducer} from "./Reducers/CountReducer.ts";
 
 export const store = createStore(countReducer)
